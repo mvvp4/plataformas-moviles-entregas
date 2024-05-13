@@ -3,6 +3,21 @@ h1 {
 p {
   font-family: serif;
 }
-#primer-parrafo {
-  background-color: #000;
+#contenedor #primer-parrafo {
+  background-color: #CEE;
+}
+#primer-parrafo em{
+  color: #933;
+}
+a {
+  outline: 1px solid #333
+}
+body p.fuente.parrafo {
+opacity:100% !important;
+}
+p:not([id]) {
+  text-shadow: none;
+}
+body p.fuente.parrafo {
+  color: #000 !important;
 }

@@ -1,5 +1,57 @@
-@media screen and (max-width: 500px) {
-    .carru {
-        display: none;
+#navbar {
+    display: flex;
+}
+#body-block {
+    background-color: azure;
+}
+.title-body {
+    font-family: sans;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    color: aliceblue;
+    padding: 3vh 0;
+}
+@media screen and (max-width:576px) {
+    nav {
+        margin:0% 0.5%;
+    }
+    #content-body, footer div {
+        margin:0% 0.5%;
+    }
+    .title-body h1 {
+        font-size: 12vh;
+    }
+    form #button01 {
+        justify-content: center !important;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    nav {
+        margin:0% 8%;
+    }
+    #carousel1 {
+        padding: 1.5% 0%;
+    }
+    #content-body, footer div {
+        margin: 0% 8%;
+    }
+    .title-body h1 {
+        font-size: 12vh;
+}
+}
+@media screen and (min-width:768px) {
+    nav {
+        margin:0% 10%;
+    }
+    #carousel1 {
+        padding: 2% 0%;
+    }
+    #content-body, footer div{
+        margin: 0% 10%;
+    }
+    .title-body h1 {
+        font-size: 10vh;
     }
 }

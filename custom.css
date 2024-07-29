@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-font {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,#616978 25%,#381c47);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #343434;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-info {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    background-color: #343434;
+    color: aliceblue;
+    box-shadow: inset 0 0vh 2vh #1c0825;
+}
+#items-body {
+    flex: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#items-body a:visited{
+    color: aliceblue;
+    text-decoration: #343434;
+}
+#items-body a{
+    text-decoration: #343434;
+}
+.button-item {
+    display: flex;
+    background-color: #616978;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 1vh 1vh #381c47;
+}
+@media screen and (max-width:576px) {}
+@media screen and (min-width:576px) and (max-width:768px) {}
+@media screen and (min-width:768px) {
+    footer {
+        height: 10vh;
+    }
+    #items-body {
+        margin: 0 6vh;
+    }
+    .header-font {
+        padding: 0 14vh;
+        font-size: xx-large;
+        font-weight: 600;
+        height: 15vh;
+        border-bottom: solid 0.5vh black;
+        text-shadow: 0 0 1vh #a3a3a1;
+    }
+    #button-info {
+        bottom: 4vh;
+        right: 4vh;
+        padding: 4vh;
+        border-radius: 10%;
+        font-weight: 600;
+        font-size: large;
+    }
+    .button-item {
+        width: 35vh;
+        height: 20vh;
+        border-radius: 10%;
+        margin: 2vh;
+        box-shadow: inset 0 0 10vh #381c47;
+        transition-delay: 0.05s;
+        border: solid 0.5vh #343434;
+    }
+    .button-item:hover{
+        text-shadow: 0.5vh 1.2vh 1vh #381c47;
+        box-shadow: inset 3vh 3vh 10vh #381c47;
+    }
+}

@@ -20,6 +20,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 #button-info {
     font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +30,6 @@ footer {
     box-shadow: inset 0 0vh 2vh #1c0825;
 }
 #items-body {
-    flex: 1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -49,14 +49,97 @@ footer {
     align-items: center;
     text-shadow: 0 1vh 1vh #381c47;
 }
-@media screen and (max-width:576px) {}
-@media screen and (min-width:576px) and (max-width:768px) {}
+@media screen and (max-width:576px) {
+    footer {
+        height: 8vh;
+        padding:2vh 0;
+        margin-top: 2vh;
+    }
+    #items-body {
+        margin: 0 2vh;
+    }
+    #items-body a{
+        margin: 2vh;
+    }
+    .header-font {
+        padding: 3vh 2vh;
+        font-size: x-large;
+        font-weight: 600;
+        height: 20vh;
+        border-bottom: solid 0.5vh black;
+        text-shadow: 0 0 1.5vh #a3a3a1;
+    }
+    #button-info {
+        bottom: 0;
+        right: 0;
+        padding: 3vh;
+        border-radius: 10% 0 0 0;
+        font-weight: 600;
+        font-size: x-large;
+    }
+    .button-item {
+        width: 30vh;
+        height: 30vh;
+        border-radius: 15%;
+        box-shadow: inset 0 0 10vh #381c47;
+        transition-delay: 0.05s;
+        border: solid 0.5vh #343434;
+        font-size: large;
+    }
+    .button-item:hover{
+        text-shadow: 0.6vh 1.3vh 1.2vh #381c47;
+        box-shadow: inset 3vh 3vh 12vh #381c47;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    footer {
+        height: 8vh;
+    }
+    #items-body {
+        margin: 0 6vh;
+    }
+    #items-body a{
+        margin: 4vh;
+    }
+    .header-font {
+        padding: 4vh 12vh;
+        font-size: x-large;
+        font-weight: 600;
+        height: 24vh;
+        border-bottom: solid 0.5vh black;
+        text-shadow: 0 0 1.2vh #a3a3a1;
+    }
+    #button-info {
+        bottom: 3vh;
+        right: 2vh;
+        padding: 4vh;
+        border-radius: 10%;
+        font-weight: 600;
+        font-size: large;
+    }
+    .button-item {
+        width: 40vh;
+        height: 25vh;
+        border-radius: 12%;
+        box-shadow: inset 0 0 10vh #381c47;
+        transition-delay: 0.05s;
+        border: solid 0.5vh #343434;
+        font-size: large;
+    }
+    .button-item:hover{
+        text-shadow: 0.5vh 1.2vh 1vh #381c47;
+        box-shadow: inset 3vh 3vh 10vh #381c47;
+    }
+}
 @media screen and (min-width:768px) {
     footer {
         height: 10vh;
     }
     #items-body {
         margin: 0 6vh;
+    }
+    #items-body a{
+        margin: 2vh;
     }
     .header-font {
         padding: 0 14vh;
@@ -78,7 +161,6 @@ footer {
         width: 35vh;
         height: 20vh;
         border-radius: 10%;
-        margin: 2vh;
         box-shadow: inset 0 0 10vh #381c47;
         transition-delay: 0.05s;
         border: solid 0.5vh #343434;

@@ -116,7 +116,7 @@ console.log("resultado felizCumpleaños: ", felizCumpleaños(personaEjemplo));
  * - un valor boolean ('true' o 'false'), indicando si persona1 y persona2 son la misma persona.
  */
 function sonLaMismaPersona(persona1,persona2) {
-    return persona1.nombre===persona2.nombre;
+    return persona1===persona2;
 }
 console.log("resultado sonLaMismaPersona: ", sonLaMismaPersona(
     personaEjemplo,

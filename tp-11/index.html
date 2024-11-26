@@ -42,28 +42,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script type="text/javascript">
         /**
-         * funcionNegrita()
-         * esta función se va a llamar cuando el usuario selecciona la opción Bold (negrita).
-         */
+        * funcionNegrita()
+        * Aplica o quita el formato negrita al texto.
+        */
         function funcionNegrita() {
-            // su implementación
+            const texto = document.getElementById("texto");
+            if (texto.style.fontWeight === "bold") {
+                texto.style.fontWeight = "normal";
+            } else {
+                texto.style.fontWeight = "bold";
+            }
         }
 
         /**
-         * funcionCursiva()
-         * esta función se va a llamar cuando el usuario selecciona la opción Bold (negrita).
-         */
+        * funcionCursiva()
+        * Aplica o quita el formato cursiva al texto.
+        */
         function funcionCursiva() {
-            // su implementación
+            const texto = document.getElementById("texto");
+            if (texto.style.fontStyle === "italic") {
+                texto.style.fontStyle = "normal";
+            } else {
+                texto.style.fontStyle = "italic";
+            }
         }
 
         /**
-         * funcionSubrayado()
-         * esta función se va a llamar cuando el usuario selecciona la opción Bold (negrita).
-         */
+        * funcionSubrayado()
+        * Aplica o quita el subrayado al texto.
+        */
         function funcionSubrayado() {
-            // su implementación
+            const texto = document.getElementById("texto");
+            if (texto.style.textDecoration === "underline") {
+                texto.style.textDecoration = "none";
+            } else {
+                texto.style.textDecoration = "underline";
+            }
         }
+
 
         function handlerBoton(e) {
             const funcionBoton = e.target.dataset.formato;

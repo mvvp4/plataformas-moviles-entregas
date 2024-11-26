@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Kickflip';
+    src: url(../fonts/kickflip.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'PokemonPixelFont';
+    src: url(../fonts/Pokemon_Pixel_Font/pokemon_pixel_font.ttf) format('truetype');
+}
+nav {
+    font-family: 'Kickflip';
+}
+.navbar-brand {
+    display: flex;
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+    height: auto;
+    font-weight:100;
+    font-size: 20;
+    color: aliceblue;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+#pok {
+    margin-right: 10vh;
+    font-family: 'PokemonPixelFont';
+}
+#pok li {
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#f88b21 45%,#db7815);
+    border-radius: 2vh 2vh 2vh 2vh;
+    height: 10vh;
+    margin: 2vh 2vh;
+}
+#pok #order {
+    margin-right: 10%;
+}
+#pok li a {
+    margin: 0 2vh;
+    text-align: start;
+    width: 100%;
+}
+#iconball {
+    width: 5vh;
+    height: 5vh;
+    margin: 0 0 0 2vh;
+}
+
+#interface #block-2{
+    position: fixed;
+    margin: 2vh 0 5vh 15px;
+    width: 20vh;
+    height: 88vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#block-2 #block-3{
+    top: 0;
+    position: absolute;
+    width: 25vh;
+    height: 33vh;
+    box-shadow: 3px 5px 15px rgb(247, 218, 211) inset;
+}
+#block-2 img {
+    position: absolute;
+    width: 110%;
+}
+#block-2 #block-4{
+    position: absolute;
+    width: 25vh;
+    height: 33vh;
+    bottom: 0;
+    box-shadow: 2px -3px 8px rgb(247, 218, 211) inset;
+}
+#block-2,#block-4, #block-3 {
+    border-radius: 0 15% 15% 0;
+}
